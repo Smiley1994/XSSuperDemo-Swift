@@ -12,26 +12,7 @@
 		5F26165120E3FA27004A52FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26164F20E3FA27004A52FC /* Main.storyboard */; };
 		5F26165320E3FA28004A52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F26165220E3FA28004A52FC /* Assets.xcassets */; };
 		5F26165620E3FA28004A52FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26165420E3FA28004A52FC /* LaunchScreen.storyboard */; };
-		5F26166120E3FA28004A52FC /* XSSuperDemo_SwfitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26166020E3FA28004A52FC /* XSSuperDemo_SwfitTests.swift */; };
-		5F26166C20E3FA28004A52FC /* XSSuperDemo_SwfitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26166B20E3FA28004A52FC /* XSSuperDemo_SwfitUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5F26165D20E3FA28004A52FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F26164020E3FA27004A52FC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5F26164720E3FA27004A52FC;
-			remoteInfo = "XSSuperDemo-Swfit";
-		};
-		5F26166820E3FA28004A52FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F26164020E3FA27004A52FC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5F26164720E3FA27004A52FC;
-			remoteInfo = "XSSuperDemo-Swfit";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5F26164820E3FA27004A52FC /* XSSuperDemo-Swfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XSSuperDemo-Swfit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,30 +22,10 @@
 		5F26165220E3FA28004A52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F26165520E3FA28004A52FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F26165720E3FA28004A52FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F26165C20E3FA28004A52FC /* XSSuperDemo-SwfitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XSSuperDemo-SwfitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F26166020E3FA28004A52FC /* XSSuperDemo_SwfitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSSuperDemo_SwfitTests.swift; sourceTree = "<group>"; };
-		5F26166220E3FA28004A52FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F26166720E3FA28004A52FC /* XSSuperDemo-SwfitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XSSuperDemo-SwfitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F26166B20E3FA28004A52FC /* XSSuperDemo_SwfitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSSuperDemo_SwfitUITests.swift; sourceTree = "<group>"; };
-		5F26166D20E3FA28004A52FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5F26164520E3FA27004A52FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F26165920E3FA28004A52FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F26166420E3FA28004A52FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				5F26164A20E3FA27004A52FC /* XSSuperDemo-Swfit */,
-				5F26165F20E3FA28004A52FC /* XSSuperDemo-SwfitTests */,
-				5F26166A20E3FA28004A52FC /* XSSuperDemo-SwfitUITests */,
 				5F26164920E3FA27004A52FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				5F26164820E3FA27004A52FC /* XSSuperDemo-Swfit.app */,
-				5F26165C20E3FA28004A52FC /* XSSuperDemo-SwfitTests.xctest */,
-				5F26166720E3FA28004A52FC /* XSSuperDemo-SwfitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,24 +62,6 @@
 				5F26165720E3FA28004A52FC /* Info.plist */,
 			);
 			path = "XSSuperDemo-Swfit";
-			sourceTree = "<group>";
-		};
-		5F26165F20E3FA28004A52FC /* XSSuperDemo-SwfitTests */ = {
-			isa = PBXGroup;
-			children = (
-				5F26166020E3FA28004A52FC /* XSSuperDemo_SwfitTests.swift */,
-				5F26166220E3FA28004A52FC /* Info.plist */,
-			);
-			path = "XSSuperDemo-SwfitTests";
-			sourceTree = "<group>";
-		};
-		5F26166A20E3FA28004A52FC /* XSSuperDemo-SwfitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5F26166B20E3FA28004A52FC /* XSSuperDemo_SwfitUITests.swift */,
-				5F26166D20E3FA28004A52FC /* Info.plist */,
-			);
-			path = "XSSuperDemo-SwfitUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,42 +84,6 @@
 			productReference = 5F26164820E3FA27004A52FC /* XSSuperDemo-Swfit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5F26165B20E3FA28004A52FC /* XSSuperDemo-SwfitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F26167320E3FA28004A52FC /* Build configuration list for PBXNativeTarget "XSSuperDemo-SwfitTests" */;
-			buildPhases = (
-				5F26165820E3FA28004A52FC /* Sources */,
-				5F26165920E3FA28004A52FC /* Frameworks */,
-				5F26165A20E3FA28004A52FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5F26165E20E3FA28004A52FC /* PBXTargetDependency */,
-			);
-			name = "XSSuperDemo-SwfitTests";
-			productName = "XSSuperDemo-SwfitTests";
-			productReference = 5F26165C20E3FA28004A52FC /* XSSuperDemo-SwfitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5F26166620E3FA28004A52FC /* XSSuperDemo-SwfitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F26167620E3FA28004A52FC /* Build configuration list for PBXNativeTarget "XSSuperDemo-SwfitUITests" */;
-			buildPhases = (
-				5F26166320E3FA28004A52FC /* Sources */,
-				5F26166420E3FA28004A52FC /* Frameworks */,
-				5F26166520E3FA28004A52FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5F26166920E3FA28004A52FC /* PBXTargetDependency */,
-			);
-			name = "XSSuperDemo-SwfitUITests";
-			productName = "XSSuperDemo-SwfitUITests";
-			productReference = 5F26166720E3FA28004A52FC /* XSSuperDemo-SwfitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,14 +96,6 @@
 				TargetAttributes = {
 					5F26164720E3FA27004A52FC = {
 						CreatedOnToolsVersion = 9.4.1;
-					};
-					5F26165B20E3FA28004A52FC = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 5F26164720E3FA27004A52FC;
-					};
-					5F26166620E3FA28004A52FC = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 5F26164720E3FA27004A52FC;
 					};
 				};
 			};
@@ -218,8 +113,6 @@
 			projectRoot = "";
 			targets = (
 				5F26164720E3FA27004A52FC /* XSSuperDemo-Swfit */,
-				5F26165B20E3FA28004A52FC /* XSSuperDemo-SwfitTests */,
-				5F26166620E3FA28004A52FC /* XSSuperDemo-SwfitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,20 +128,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F26165A20E3FA28004A52FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F26166520E3FA28004A52FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,36 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F26165820E3FA28004A52FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F26166120E3FA28004A52FC /* XSSuperDemo_SwfitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F26166320E3FA28004A52FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F26166C20E3FA28004A52FC /* XSSuperDemo_SwfitUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5F26165E20E3FA28004A52FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5F26164720E3FA27004A52FC /* XSSuperDemo-Swfit */;
-			targetProxy = 5F26165D20E3FA28004A52FC /* PBXContainerItemProxy */;
-		};
-		5F26166920E3FA28004A52FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5F26164720E3FA27004A52FC /* XSSuperDemo-Swfit */;
-			targetProxy = 5F26166820E3FA28004A52FC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5F26164F20E3FA27004A52FC /* Main.storyboard */ = {
@@ -462,88 +312,6 @@
 			};
 			name = Release;
 		};
-		5F26167420E3FA28004A52FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZS7ZWB69B7;
-				INFOPLIST_FILE = "XSSuperDemo-SwfitTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Smiley.XSSuperDemo-SwfitTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XSSuperDemo-Swfit.app/XSSuperDemo-Swfit";
-			};
-			name = Debug;
-		};
-		5F26167520E3FA28004A52FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZS7ZWB69B7;
-				INFOPLIST_FILE = "XSSuperDemo-SwfitTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Smiley.XSSuperDemo-SwfitTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XSSuperDemo-Swfit.app/XSSuperDemo-Swfit";
-			};
-			name = Release;
-		};
-		5F26167720E3FA28004A52FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZS7ZWB69B7;
-				INFOPLIST_FILE = "XSSuperDemo-SwfitUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Smiley.XSSuperDemo-SwfitUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "XSSuperDemo-Swfit";
-			};
-			name = Debug;
-		};
-		5F26167820E3FA28004A52FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZS7ZWB69B7;
-				INFOPLIST_FILE = "XSSuperDemo-SwfitUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Smiley.XSSuperDemo-SwfitUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "XSSuperDemo-Swfit";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,24 +329,6 @@
 			buildConfigurations = (
 				5F26167120E3FA28004A52FC /* Debug */,
 				5F26167220E3FA28004A52FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5F26167320E3FA28004A52FC /* Build configuration list for PBXNativeTarget "XSSuperDemo-SwfitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F26167420E3FA28004A52FC /* Debug */,
-				5F26167520E3FA28004A52FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5F26167620E3FA28004A52FC /* Build configuration list for PBXNativeTarget "XSSuperDemo-SwfitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F26167720E3FA28004A52FC /* Debug */,
-				5F26167820E3FA28004A52FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
