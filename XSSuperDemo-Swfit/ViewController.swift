@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        self.view.backgroundColor = UIColor.randomColor
+        let button = XSIQiYiPlayButton(frame: CGRect(x: 100, y: 100, width: 50, height: 50), status: .IQiYiPlayStatusPlay)
+        self.view.addSubview(button)
+        
         
         
     }

@@ -12,6 +12,7 @@
 		5F26165120E3FA27004A52FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26164F20E3FA27004A52FC /* Main.storyboard */; };
 		5F26165320E3FA28004A52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F26165220E3FA28004A52FC /* Assets.xcassets */; };
 		5F26165620E3FA28004A52FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26165420E3FA28004A52FC /* LaunchScreen.storyboard */; };
+		5FC33D7820F4A53200FED5E8 /* XSIQiYiPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		5F26165220E3FA28004A52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F26165520E3FA28004A52FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F26165720E3FA28004A52FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIQiYiPlayButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		5F26164A20E3FA27004A52FC /* XSSuperDemo-Swfit */ = {
 			isa = PBXGroup;
 			children = (
+				5FC33D7620F4A40800FED5E8 /* PlayerButton */,
 				5F26164B20E3FA27004A52FC /* AppDelegate.swift */,
 				5F26164D20E3FA27004A52FC /* ViewController.swift */,
 				5F26164F20E3FA27004A52FC /* Main.storyboard */,
@@ -75,6 +78,14 @@
 				5F26165720E3FA28004A52FC /* Info.plist */,
 			);
 			path = "XSSuperDemo-Swfit";
+			sourceTree = "<group>";
+		};
+		5FC33D7620F4A40800FED5E8 /* PlayerButton */ = {
+			isa = PBXGroup;
+			children = (
+				5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */,
+			);
+			path = PlayerButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			files = (
 				5F26164E20E3FA27004A52FC /* ViewController.swift in Sources */,
 				5F26164C20E3FA27004A52FC /* AppDelegate.swift in Sources */,
+				5FC33D7820F4A53200FED5E8 /* XSIQiYiPlayButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
