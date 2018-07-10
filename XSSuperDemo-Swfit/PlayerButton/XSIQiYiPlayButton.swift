@@ -113,7 +113,33 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
     
     //MARK: 执行动画 暂停->播放
     func actionPositionAnimation() {
+        self.strokeEndAnimationFrom(fromValue: 0, toValue: 1, layer: triangleLayer, animationName: TriangleAnimation, duration: AnimationDuration, delegate: self)
         
+        self.strokeEndAnimationFrom(fromValue: 1, toValue: 0, layer: rightLineLayer, animationName: RightLineAnimation, duration: AnimationDuration / 4, delegate: self)
+        
+        let deadlineTime = DispatchTime.now() + .seconds(1)
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+            print("test")
+        }
+        
+        
+        
+        
+    }
+    
+    func strokeEndAnimationFrom(fromValue : CGFloat, toValue : CGFloat, layer : CALayer, animationName : String, duration : CGFloat, delegate : Any) -> CABasicAnimation {
+        
+        let strokeEndAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        strokeEndAnimation.duration = CFTimeInterval(duration)
+        strokeEndAnimation.fromValue = fromValue
+        strokeEndAnimation.toValue = toValue
+        strokeEndAnimation.fillMode = kCAFillModeForwards
+        strokeEndAnimation.isRemovedOnCompletion = false
+        strokeEndAnimation .setValue(animationName, forKey: "animationName")
+        strokeEndAnimation.delegate = delegate as? CAAnimationDelegate
+        layer.add(strokeEndAnimation, forKey: nil)
+        
+        return strokeEndAnimation
     }
     
     func LineWidth() -> CGFloat {
