@@ -51,7 +51,7 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
             }
         }
     }
-    var isAnimation : Bool!
+    var isAnimation : Bool = false
     
     var leftLineLayer : CAShapeLayer!
     var triangleLayer : CAShapeLayer!
@@ -61,20 +61,17 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
     
     init(frame : CGRect, status : IQiYiPlayStatus) {
         super.init(frame: frame)
-        createUI()
-        if status == IQiYiPlayStatus.IQiYiPlayStatusPlay {
-            self.buttonStatus = status
-        }
+        createUI(status : status)
     }
     
     
     
-    func createUI() {
+    func createUI(status : IQiYiPlayStatus) {
         addTriangleLayer()
         addLeftLineLayer()
         addRightLineLayer()
         addCircleLayer()
-//        buttonStatus = .IQiYiPlayStatusPause
+        buttonStatus = status
     }
     
     func addTriangleLayer() {
