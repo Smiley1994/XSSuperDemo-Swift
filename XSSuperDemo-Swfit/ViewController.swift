@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        iQiYiButton = XSIQiYiPlayButton(frame: CGRect(x: 100, y: 100, width: 50, height: 50), status: .IQiYiPlayStatusPause)
+//        frame: CGRect(x: 100, y: 100, width: 100, height: 100), status: .IQiYiPlayStatusPause
+        iQiYiButton = XSIQiYiPlayButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100), status: .IQiYiPlayStatusPlay, color: UIColor.green)
         iQiYiButton.addTarget(self, action: #selector(click), for: .touchUpInside)
         self.view.addSubview(iQiYiButton)
         

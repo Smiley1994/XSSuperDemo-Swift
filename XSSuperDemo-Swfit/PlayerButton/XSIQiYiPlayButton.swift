@@ -18,8 +18,6 @@ let AnimationDuration : CGFloat = 0.5
 //位移动画时长
 let PositionDuration  : CGFloat = 0.3
 
-let LineColor = UIColor.red
-
 let TriangleAnimation = "TriangleAnimation"
 let RightLineAnimation = "RightLineAnimation"
 
@@ -53,14 +51,17 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
     }
     var isAnimation : Bool = false
     
+    var LineColor : UIColor!
+    
     var leftLineLayer : CAShapeLayer!
     var triangleLayer : CAShapeLayer!
     var rightLineLayer : CAShapeLayer!
     var circleLayer : CAShapeLayer!
     
     
-    init(frame : CGRect, status : IQiYiPlayStatus) {
+    init(frame : CGRect, status : IQiYiPlayStatus, color : UIColor? = UIColor.white) {
         super.init(frame: frame)
+        LineColor = color
         createUI(status : status)
     }
     
