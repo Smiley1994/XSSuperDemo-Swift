@@ -70,11 +70,11 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
     
     
     func createUI() {
-//        buttonStatus = .IQiYiPlayStatusPause
         addTriangleLayer()
         addLeftLineLayer()
         addRightLineLayer()
         addCircleLayer()
+//        buttonStatus = .IQiYiPlayStatusPause
     }
     
     func addTriangleLayer() {
@@ -118,8 +118,8 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
     func addRightLineLayer() {
         let a = self.bounds.size.width
         let path = UIBezierPath()
-        path.move(to: CGPoint(x: a * 0.8, y: 0))
-        path.addLine(to: CGPoint(x: a * 0.8, y: a))
+        path.move(to: CGPoint(x: a * 0.8, y: a))
+        path.addLine(to: CGPoint(x: a * 0.8, y: 0))
         
         rightLineLayer = CAShapeLayer()
         rightLineLayer.path = path.cgPath
@@ -135,7 +135,6 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
         let a = self.bounds.size.width
         let path = UIBezierPath()
         path.move(to: CGPoint(x: a * 0.8, y: a * 0.8))
-//        path.addLine(to: CGPoint(x: a * 0.8, y: a))
         path.addArc(withCenter: CGPoint(x: a * 0.5, y: a * 0.8), radius: a * 0.3, startAngle: 0, endAngle: .pi, clockwise: true)
         
         circleLayer = CAShapeLayer()
@@ -178,7 +177,7 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
             self.circleStartAnimationFrom(fromValue: 1, toValue: 0)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.85) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.38) {
             
             self.strokeEndAnimationFrom(fromValue: 0, toValue: 1, layer: self.rightLineLayer, animationName: RightLineAnimation, duration: AnimationDuration / 4, delegate: self)
             
@@ -203,7 +202,7 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
         strokeEndAnimation.isRemovedOnCompletion = false
         strokeEndAnimation.setValue(animationName, forKey: "animationName")
         strokeEndAnimation.delegate = delegate
-        layer.add(strokeEndAnimation, forKey: "1")
+        layer.add(strokeEndAnimation, forKey: nil)
     }
     
     /**
@@ -216,7 +215,7 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
         circleAnimation.toValue = toValue
         circleAnimation.fillMode = kCAFillModeForwards
         circleAnimation.isRemovedOnCompletion = false
-        circleLayer.add(circleAnimation, forKey: "1")
+        circleLayer.add(circleAnimation, forKey: nil)
     }
     
     //MARK: 动画 开始，结束代理方法
@@ -299,7 +298,7 @@ class XSIQiYiPlayButton: UIButton,CAAnimationDelegate {
             
             let leftPath2 = UIBezierPath()
             leftPath2.move(to: CGPoint(x: 0.2 * a, y: 0))
-            leftPath2.addLine(to: CGPoint(x: 0.2 * a, y: 0))
+            leftPath2.addLine(to: CGPoint(x: 0.2 * a, y: a))
             self.leftLineLayer.path = leftPath2.cgPath
             self.leftLineLayer.add(self.pathAnimationWithDuration(duration: PositionDuration / 2), forKey: nil)
             
