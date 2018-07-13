@@ -7,34 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F18166820F8905A00D631B6 /* XSSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18166720F8905A00D631B6 /* XSSplashViewController.swift */; };
+		5F18166D20F8953E00D631B6 /* XSCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F18166A20F8953E00D631B6 /* XSCommon.framework */; };
+		5F18166E20F8953E00D631B6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F18166B20F8953E00D631B6 /* Alamofire.framework */; };
+		5F18166F20F8953E00D631B6 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F18166C20F8953E00D631B6 /* SnapKit.framework */; };
+		5F18167320F89B6100D631B6 /* XSIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18167220F89B6100D631B6 /* XSIndexViewController.swift */; };
+		5F18167620F89D9100D631B6 /* XSUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18167520F89D9100D631B6 /* XSUserViewController.swift */; };
+		5F18167820F8A50700D631B6 /* XSRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18167720F8A50700D631B6 /* XSRootViewController.swift */; };
+		5F18167A20F8A6BB00D631B6 /* XSCommon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F18166A20F8953E00D631B6 /* XSCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5F18167B20F8A6BF00D631B6 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F18166B20F8953E00D631B6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5F18167C20F8A6C300D631B6 /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F18166C20F8953E00D631B6 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5F18167E20F8B54300D631B6 /* XSMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18167D20F8B54300D631B6 /* XSMacro.swift */; };
 		5F26164C20E3FA27004A52FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26164B20E3FA27004A52FC /* AppDelegate.swift */; };
-		5F26164E20E3FA27004A52FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26164D20E3FA27004A52FC /* ViewController.swift */; };
-		5F26165120E3FA27004A52FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26164F20E3FA27004A52FC /* Main.storyboard */; };
 		5F26165320E3FA28004A52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F26165220E3FA28004A52FC /* Assets.xcassets */; };
-		5F26165620E3FA28004A52FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26165420E3FA28004A52FC /* LaunchScreen.storyboard */; };
 		5FC33D7820F4A53200FED5E8 /* XSIQiYiPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5F0E225020E9277F00095979 /* Embed Frameworks */ = {
+		5F18167920F8A6AC00D631B6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5F18167C20F8A6C300D631B6 /* SnapKit.framework in CopyFiles */,
+				5F18167B20F8A6BF00D631B6 /* Alamofire.framework in CopyFiles */,
+				5F18167A20F8A6BB00D631B6 /* XSCommon.framework in CopyFiles */,
 			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F18166720F8905A00D631B6 /* XSSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSSplashViewController.swift; sourceTree = "<group>"; };
+		5F18166A20F8953E00D631B6 /* XSCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XSCommon.framework; path = Carthage/Build/iOS/XSCommon.framework; sourceTree = "<group>"; };
+		5F18166B20F8953E00D631B6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		5F18166C20F8953E00D631B6 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		5F18167220F89B6100D631B6 /* XSIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIndexViewController.swift; sourceTree = "<group>"; };
+		5F18167520F89D9100D631B6 /* XSUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSUserViewController.swift; sourceTree = "<group>"; };
+		5F18167720F8A50700D631B6 /* XSRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSRootViewController.swift; sourceTree = "<group>"; };
+		5F18167D20F8B54300D631B6 /* XSMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSMacro.swift; sourceTree = "<group>"; };
 		5F26164820E3FA27004A52FC /* XSSuperDemo-Swfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XSSuperDemo-Swfit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F26164B20E3FA27004A52FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F26164D20E3FA27004A52FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5F26165020E3FA27004A52FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F26165220E3FA28004A52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5F26165520E3FA28004A52FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F26165720E3FA28004A52FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIQiYiPlayButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,17 +59,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F18166D20F8953E00D631B6 /* XSCommon.framework in Frameworks */,
+				5F18166E20F8953E00D631B6 /* Alamofire.framework in Frameworks */,
+				5F18166F20F8953E00D631B6 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F18166420F88F7E00D631B6 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				5F18167220F89B6100D631B6 /* XSIndexViewController.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		5F18166520F88F9400D631B6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5F26164B20E3FA27004A52FC /* AppDelegate.swift */,
+				5F18166720F8905A00D631B6 /* XSSplashViewController.swift */,
+				5F18167720F8A50700D631B6 /* XSRootViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5F18166620F88FB100D631B6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5F26165220E3FA28004A52FC /* Assets.xcassets */,
+				5F26165720E3FA28004A52FC /* Info.plist */,
+				5F18167D20F8B54300D631B6 /* XSMacro.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		5F18166920F8953E00D631B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F18166B20F8953E00D631B6 /* Alamofire.framework */,
+				5F18166C20F8953E00D631B6 /* SnapKit.framework */,
+				5F18166A20F8953E00D631B6 /* XSCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F18167420F89D7800D631B6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				5F18167520F89D9100D631B6 /* XSUserViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		5F26163F20E3FA27004A52FC = {
 			isa = PBXGroup;
 			children = (
 				5F26164A20E3FA27004A52FC /* XSSuperDemo-Swfit */,
 				5F26164920E3FA27004A52FC /* Products */,
+				5F18166920F8953E00D631B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,13 +134,11 @@
 		5F26164A20E3FA27004A52FC /* XSSuperDemo-Swfit */ = {
 			isa = PBXGroup;
 			children = (
+				5F18166520F88F9400D631B6 /* Base */,
+				5F18166420F88F7E00D631B6 /* Index */,
+				5F18166620F88FB100D631B6 /* Other */,
 				5FC33D7620F4A40800FED5E8 /* PlayerButton */,
-				5F26164B20E3FA27004A52FC /* AppDelegate.swift */,
-				5F26164D20E3FA27004A52FC /* ViewController.swift */,
-				5F26164F20E3FA27004A52FC /* Main.storyboard */,
-				5F26165220E3FA28004A52FC /* Assets.xcassets */,
-				5F26165420E3FA28004A52FC /* LaunchScreen.storyboard */,
-				5F26165720E3FA28004A52FC /* Info.plist */,
+				5F18167420F89D7800D631B6 /* User */,
 			);
 			path = "XSSuperDemo-Swfit";
 			sourceTree = "<group>";
@@ -97,9 +160,9 @@
 			buildPhases = (
 				5F26164420E3FA27004A52FC /* Sources */,
 				5F26164520E3FA27004A52FC /* Frameworks */,
-				5F26164620E3FA27004A52FC /* Resources */,
-				5F0E225020E9277F00095979 /* Embed Frameworks */,
 				5F0E225320E931AB00095979 /* ShellScript */,
+				5F26164620E3FA27004A52FC /* Resources */,
+				5F18167920F8A6AC00D631B6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -116,6 +179,7 @@
 		5F26164020E3FA27004A52FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XS;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = GoodMorning;
@@ -148,9 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F26165620E3FA28004A52FC /* LaunchScreen.storyboard in Resources */,
 				5F26165320E3FA28004A52FC /* Assets.xcassets in Resources */,
-				5F26165120E3FA27004A52FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +225,9 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/XSCommon.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			outputPaths = (
 			);
@@ -177,32 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F26164E20E3FA27004A52FC /* ViewController.swift in Sources */,
+				5F18167320F89B6100D631B6 /* XSIndexViewController.swift in Sources */,
+				5F18166820F8905A00D631B6 /* XSSplashViewController.swift in Sources */,
 				5F26164C20E3FA27004A52FC /* AppDelegate.swift in Sources */,
+				5F18167E20F8B54300D631B6 /* XSMacro.swift in Sources */,
+				5F18167620F89D9100D631B6 /* XSUserViewController.swift in Sources */,
 				5FC33D7820F4A53200FED5E8 /* XSIQiYiPlayButton.swift in Sources */,
+				5F18167820F8A50700D631B6 /* XSRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5F26164F20E3FA27004A52FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F26165020E3FA27004A52FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5F26165420E3FA28004A52FC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F26165520E3FA28004A52FC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5F26166E20E3FA28004A52FC /* Debug */ = {
@@ -323,14 +373,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N87RCZ5LLU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/XSSuperDemo-Swfit",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "XSSuperDemo-Swfit/Info.plist";
+				INFOPLIST_FILE = "XSSuperDemo-Swfit/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Smiley.XSSuperDemo-Swfit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,14 +399,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N87RCZ5LLU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/XSSuperDemo-Swfit",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "XSSuperDemo-Swfit/Info.plist";
+				INFOPLIST_FILE = "XSSuperDemo-Swfit/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -363,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Smiley.XSSuperDemo-Swfit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
