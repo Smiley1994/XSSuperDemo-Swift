@@ -14,6 +14,7 @@ class XSUserViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.randomColor
         
+
     }
 
     

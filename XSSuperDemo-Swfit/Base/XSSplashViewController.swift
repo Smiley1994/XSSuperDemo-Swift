@@ -16,15 +16,12 @@ class XSSplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
+        view.backgroundColor = UIColor.randomColor
         openRootViewController()
     }
 
     
     func openRootViewController() {
-//        let window = UIApplication.shared.delegate as! AppDelegate
-//        window.window?.rootViewController = XSRootViewController()
-//        [UIApplication sharedApplication].keyWindow.rootViewController = rootViewController;
         UIApplication.shared.keyWindow?.rootViewController = XSRootViewController()
     }
 
