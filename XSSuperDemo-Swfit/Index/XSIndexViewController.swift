@@ -50,5 +50,12 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         cell?.contentView.backgroundColor = UIColor.randomColor
         return cell!
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let playerViewController = XSPlayerViewController()
+        self.tabBarController?.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(playerViewController, animated: true)
+        
+    }
 
 }
