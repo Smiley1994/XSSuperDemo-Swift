@@ -22,6 +22,8 @@
 		5F21ED4221063AA40034720A /* XSPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F21ED4121063AA40034720A /* XSPlayerView.swift */; };
 		5F26164C20E3FA27004A52FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26164B20E3FA27004A52FC /* AppDelegate.swift */; };
 		5F26165320E3FA28004A52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F26165220E3FA28004A52FC /* Assets.xcassets */; };
+		5F39E0A221284D6900AF74B3 /* XSIndexNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39E0A121284D6900AF74B3 /* XSIndexNavigationView.swift */; };
+		5F39E0A42128526600AF74B3 /* XSDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39E0A32128526600AF74B3 /* XSDefaultCell.swift */; };
 		5FC33D7820F4A53200FED5E8 /* XSIQiYiPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		5F26164B20E3FA27004A52FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F26165220E3FA28004A52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F26165720E3FA28004A52FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F39E0A121284D6900AF74B3 /* XSIndexNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIndexNavigationView.swift; sourceTree = "<group>"; };
+		5F39E0A32128526600AF74B3 /* XSDefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSDefaultCell.swift; sourceTree = "<group>"; };
 		5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIQiYiPlayButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +79,9 @@
 		5F18166420F88F7E00D631B6 /* Index */ = {
 			isa = PBXGroup;
 			children = (
-				5F18167220F89B6100D631B6 /* XSIndexViewController.swift */,
+				5F39E0A021284A3B00AF74B3 /* Model */,
+				5F39E09F21284A2700AF74B3 /* Controller */,
+				5F39E09E21284A0700AF74B3 /* View */,
 			);
 			path = Index;
 			sourceTree = "<group>";
@@ -163,6 +169,30 @@
 				5F18167420F89D7800D631B6 /* User */,
 			);
 			path = "XSSuperDemo-Swfit";
+			sourceTree = "<group>";
+		};
+		5F39E09E21284A0700AF74B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F39E0A121284D6900AF74B3 /* XSIndexNavigationView.swift */,
+				5F39E0A32128526600AF74B3 /* XSDefaultCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F39E09F21284A2700AF74B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F18167220F89B6100D631B6 /* XSIndexViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F39E0A021284A3B00AF74B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5FC33D7620F4A40800FED5E8 /* PlayerButton */ = {
@@ -272,6 +302,8 @@
 				5F18167620F89D9100D631B6 /* XSUserViewController.swift in Sources */,
 				5FC33D7820F4A53200FED5E8 /* XSIQiYiPlayButton.swift in Sources */,
 				5F21ED3F21063A5E0034720A /* XSPlayerViewController.swift in Sources */,
+				5F39E0A42128526600AF74B3 /* XSDefaultCell.swift in Sources */,
+				5F39E0A221284D6900AF74B3 /* XSIndexNavigationView.swift in Sources */,
 				5F18167820F8A50700D631B6 /* XSRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

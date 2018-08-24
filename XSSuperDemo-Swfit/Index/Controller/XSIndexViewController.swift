@@ -10,6 +10,7 @@ import UIKit
 
 class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    var navigationView : XSIndexNavigationView!
     
     var tableView : UITableView!
     
@@ -18,7 +19,18 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         navigationController?.setNavigationBarHidden(true, animated: true)
         view.backgroundColor = UIColor.randomColor
         
-        createTableView()
+        createNavigation()
+//        createTableView()
+    }
+    
+    func createNavigation() {
+        navigationView = XSIndexNavigationView()
+        view.addSubview(navigationView)
+        navigationView.snp.makeConstraints { (make) in
+            make.left.top.right.equalTo(view)
+            make.height.equalTo(84)
+        }
+        
     }
     
     
@@ -29,6 +41,7 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)
+            make.top.equalTo(navigationView.snp.bottom)
         }
     }
 
