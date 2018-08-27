@@ -10,7 +10,11 @@ import UIKit
 
 class XSDefaultCell: UICollectionViewCell {
     
-//    var <#name#> = <#value#>
+    var headerView : XSIndexDefaultCellHeaderView!
+    var titleLabel : UILabel!
+    var images : UICollectionView!
+    var spacingLine : UIView!
+    
     
     
     override init(frame: CGRect) {
@@ -19,6 +23,14 @@ class XSDefaultCell: UICollectionViewCell {
     }
     
     func createUI() {
+        
+        headerView = XSIndexDefaultCellHeaderView()
+        headerView.backgroundColor = UIColor.red
+        contentView.addSubview(headerView)
+        headerView.snp.makeConstraints { (make) in
+            make.left.top.right.equalTo(contentView);
+            make.height.equalTo(64);
+        }
         
     }
     

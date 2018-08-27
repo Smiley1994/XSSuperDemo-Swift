@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     var navigationView : XSIndexNavigationView!
@@ -28,7 +29,7 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         view.addSubview(navigationView)
         navigationView.snp.makeConstraints { (make) in
             make.left.top.right.equalTo(view)
-            make.height.equalTo(84)
+            make.height.equalTo(88)
         }
         
     }
@@ -56,9 +57,8 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        
         if (cell == nil) {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+            cell = XSDefaultCell(style: .default, reuseIdentifier: "cell")
         }
         cell?.contentView.backgroundColor = UIColor.randomColor
         return cell!

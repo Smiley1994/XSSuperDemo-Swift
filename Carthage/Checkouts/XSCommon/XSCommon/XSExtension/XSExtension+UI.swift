@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 /**
  可以在cell 内部获取cell的父视图（UITableView && UICollectionView）
@@ -56,6 +57,44 @@ extension UIImage {
         let tintedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return tintedImage!
+    }
+    
+    // 获取视频缩略图
+    public func videoPreviewImage(videoUrl : String) -> UIImage {
+        let asset = AVURLAsset(url: URL(string: videoUrl)!)
+        let gen = AVAssetImageGenerator(asset: asset)
+        gen.appliesPreferredTrackTransform = true
+        gen.maximumSize = CGSize(width: 300, height: 300)
+        let time = CMTimeMakeWithSeconds(1.0, 600)
+
+        var actualTime = CMTime()
+        do {
+            let image = try gen.copyCGImage(at: time, actualTime: &actualTime)
+            let thumb = UIImage(cgImage: image)
+            return thumb
+        } catch {
+            let placeHoldImage = UIImage(named: "")
+            return placeHoldImage!
+        }
+    }
+    
+    // MARK: 截屏
+    /// 获得截屏视图（无值获取当前Window）
+    public func ScreenCapture(_ view:UIView? = nil, _ isSave:Bool = false) ->UIImage {
+        
+        let captureView = (view ?? (UIApplication.shared.keyWindow ?? UIApplication.shared.windows.first))!
+        
+        UIGraphicsBeginImageContextWithOptions(captureView.frame.size, false, 0.0)
+        
+        captureView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        if isSave { UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil) }
+        
+        return image!
     }
 }
 
