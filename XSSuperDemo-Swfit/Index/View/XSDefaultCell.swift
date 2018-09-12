@@ -25,7 +25,7 @@ class XSDefaultCell: UICollectionViewCell {
     func createUI() {
         
         headerView = XSIndexDefaultCellHeaderView()
-        headerView.backgroundColor = UIColor.red
+        headerView.backgroundColor = UIColor.randomColor
         contentView.addSubview(headerView)
         headerView.snp.makeConstraints { (make) in
             make.left.top.right.equalTo(contentView);

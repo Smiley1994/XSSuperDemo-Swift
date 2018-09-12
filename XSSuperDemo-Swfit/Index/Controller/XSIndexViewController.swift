@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 
 class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -15,13 +16,24 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     var tableView : UITableView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(true, animated: true)
-        view.backgroundColor = UIColor.randomColor
+        view.backgroundColor = UIColor.white
         
         createNavigation()
-//        createTableView()
+        createTableView()
+        
+        Alamofire.request(WeatherUrl).response { response in // method defaults to `.get`
+            let data = response.data!
+            
+            print(data)
+        }
+        
     }
     
     func createNavigation() {
@@ -41,7 +53,7 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         tableView.dataSource = self
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view)
+            make.left.bottom.right.equalTo(self.view)
             make.top.equalTo(navigationView.snp.bottom)
         }
     }
@@ -52,21 +64,20 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return XSIndexDefaultCell.calculateHeight()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if (cell == nil) {
-            cell = XSDefaultCell(style: .default, reuseIdentifier: "cell")
+            cell = XSIndexDefaultCell(style: .default, reuseIdentifier: "cell")
         }
-        cell?.contentView.backgroundColor = UIColor.randomColor
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let playerViewController = XSPlayerViewController()
-        self.tabBarController?.hidesBottomBarWhenPushed = true
+        playerViewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(playerViewController, animated: true)
         
     }
