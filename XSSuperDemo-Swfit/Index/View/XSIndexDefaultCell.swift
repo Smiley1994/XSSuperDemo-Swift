@@ -15,7 +15,7 @@ class XSIndexDefaultCell: UITableViewCell {
     var images : UICollectionView!
     var spacingLine : UIView!
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
         createUI()
@@ -29,6 +29,7 @@ class XSIndexDefaultCell: UITableViewCell {
             make.left.top.right.equalTo(contentView);
             make.height.equalTo(64);
         }
+        
     }
     
     class func calculateHeight() -> CGFloat {

@@ -22,7 +22,7 @@ class XSRootViewController: UITabBarController {
         indexViewController.tabBarItem.selectedImage = UIImage(named: "tab_home_index")?.withRenderingMode(.alwaysOriginal)
 //        indexViewController.tabBarItem.title = "index"
         indexViewController.tabBarItem.tag = 0
-        indexViewController.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor.randomColor], for: .highlighted)
+        indexViewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.randomColor], for: .highlighted)
         let indexNavgationViewController = UINavigationController(rootViewController: indexViewController)
         
         
@@ -31,7 +31,7 @@ class XSRootViewController: UITabBarController {
         userViewController.tabBarItem.selectedImage = UIImage(named: "tab_user_selected")?.withRenderingMode(.alwaysOriginal)
         userViewController.tabBarItem.title = "user"
         userViewController.tabBarItem.tag = 1
-        userViewController.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor.red], for: .highlighted)
+        userViewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.red], for: .highlighted)
         let userNavgationViewController = UINavigationController(rootViewController: userViewController)
         
         viewControllers = [indexNavgationViewController, userNavgationViewController]

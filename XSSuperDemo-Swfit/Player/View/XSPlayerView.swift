@@ -59,11 +59,11 @@ class XSPlayerView: UIView {
             
         }else if keyPath == Status{
             // 监听状态改变
-            if playerItem.status == AVPlayerItemStatus.readyToPlay{
+            if playerItem.status == AVPlayerItem.Status.readyToPlay{
                 // 只有在这个状态下才能播放
                 avPlayer.play()
             }else{
-                print("加载异常\n",playerItem.status,"\n",AVPlayerItemStatus.readyToPlay)
+                print("加载异常\n",playerItem.status,"\n",AVPlayerItem.Status.readyToPlay)
             }
         }
         

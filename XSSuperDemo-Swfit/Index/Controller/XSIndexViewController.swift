@@ -16,6 +16,9 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     var tableView : UITableView!
     
+    var dataArray = [String]()
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         navigationController?.setNavigationBarHidden(true, animated: true)
@@ -25,14 +28,15 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
+        dataArray = ["ScrollCard", "NoteDetail", "Other", "Other"]
+        
         createNavigation()
         createTableView()
         
-        Alamofire.request(WeatherUrl).response { response in // method defaults to `.get`
-            let data = response.data!
-            
-            print(data)
-        }
+//        Alamofire.request(WeatherUrl).response { response in // method defaults to `.get`
+//            let data = response.data!
+//            print(data)
+//        }
         
     }
     
@@ -51,6 +55,7 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(XSIndexDefaultCell.self, forCellReuseIdentifier: "default")
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.left.bottom.right.equalTo(self.view)
@@ -60,7 +65,7 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 40
+        return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -68,18 +73,30 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if (cell == nil) {
-            cell = XSIndexDefaultCell(style: .default, reuseIdentifier: "cell")
-        }
-        return cell!
+        var cell = tableView.dequeueReusableCell(withIdentifier: "default") as! XSIndexDefaultCell
+        cell = XSIndexDefaultCell(style: .default, reuseIdentifier: "default")
+        cell.headerView.titleLabel.text = dataArray[indexPath.row]
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let playerViewController = XSPlayerViewController()
+        
+        let type = dataArray[indexPath.row]
+        
+        if type == "ScrollCard" {
+            openScrollCardViewController()
+        } else if type == "NoteDetail" {
+            let playerViewController = XSPlayerViewController()
+            playerViewController.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(playerViewController, animated: true)
+        }
+        
+    }
+    
+    func openScrollCardViewController() {
+        let playerViewController = XSScrollCardViewController()
         playerViewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(playerViewController, animated: true)
-        
     }
 
 }

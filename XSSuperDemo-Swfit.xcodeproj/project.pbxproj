@@ -28,6 +28,9 @@
 		5F9E9FE42146D0BB005FAC97 /* XSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E9FE32146D0BB005FAC97 /* XSApi.swift */; };
 		5F9E9FE62146D0D5005FAC97 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E9FE52146D0D5005FAC97 /* Api.swift */; };
 		5FC33D7820F4A53200FED5E8 /* XSIQiYiPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */; };
+		5FEAB8AF21F73EE70030E5FB /* XSScrollCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAB8AE21F73EE70030E5FB /* XSScrollCardViewController.swift */; };
+		5FEAB8B221F742460030E5FB /* XSCardFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAB8B021F742450030E5FB /* XSCardFlowLayout.swift */; };
+		5FEAB8B321F742460030E5FB /* XSCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAB8B121F742460030E5FB /* XSCardCell.swift */; };
 		5FF7413821329A2900456787 /* XSIndexDefaultCellHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF7413721329A2900456787 /* XSIndexDefaultCellHeaderView.swift */; };
 		5FF7413A2132FB3200456787 /* XSIndexDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF741392132FB3200456787 /* XSIndexDefaultCell.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +71,9 @@
 		5F9E9FE32146D0BB005FAC97 /* XSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSApi.swift; sourceTree = "<group>"; };
 		5F9E9FE52146D0D5005FAC97 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		5FC33D7720F4A53200FED5E8 /* XSIQiYiPlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIQiYiPlayButton.swift; sourceTree = "<group>"; };
+		5FEAB8AE21F73EE70030E5FB /* XSScrollCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSScrollCardViewController.swift; sourceTree = "<group>"; };
+		5FEAB8B021F742450030E5FB /* XSCardFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSCardFlowLayout.swift; sourceTree = "<group>"; };
+		5FEAB8B121F742460030E5FB /* XSCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSCardCell.swift; sourceTree = "<group>"; };
 		5FF7413721329A2900456787 /* XSIndexDefaultCellHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIndexDefaultCellHeaderView.swift; sourceTree = "<group>"; };
 		5FF741392132FB3200456787 /* XSIndexDefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIndexDefaultCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +191,8 @@
 		5F39E09E21284A0700AF74B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5FEAB8B121F742460030E5FB /* XSCardCell.swift */,
+				5FEAB8B021F742450030E5FB /* XSCardFlowLayout.swift */,
 				5F39E0A121284D6900AF74B3 /* XSIndexNavigationView.swift */,
 				5F39E0A32128526600AF74B3 /* XSDefaultCell.swift */,
 				5FF7413721329A2900456787 /* XSIndexDefaultCellHeaderView.swift */,
@@ -198,6 +206,7 @@
 			children = (
 				5F18167220F89B6100D631B6 /* XSIndexViewController.swift */,
 				5F9E9FDF2146C763005FAC97 /* XSNoteDetailViewController.swift */,
+				5FEAB8AE21F73EE70030E5FB /* XSScrollCardViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 				TargetAttributes = {
 					5F26164720E3FA27004A52FC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -308,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -321,7 +331,9 @@
 				5F18167320F89B6100D631B6 /* XSIndexViewController.swift in Sources */,
 				5F18166820F8905A00D631B6 /* XSSplashViewController.swift in Sources */,
 				5F9E9FE42146D0BB005FAC97 /* XSApi.swift in Sources */,
+				5FEAB8AF21F73EE70030E5FB /* XSScrollCardViewController.swift in Sources */,
 				5F26164C20E3FA27004A52FC /* AppDelegate.swift in Sources */,
+				5FEAB8B321F742460030E5FB /* XSCardCell.swift in Sources */,
 				5F21ED4221063AA40034720A /* XSPlayerView.swift in Sources */,
 				5F18167E20F8B54300D631B6 /* XSMacro.swift in Sources */,
 				5F9E9FE02146C763005FAC97 /* XSNoteDetailViewController.swift in Sources */,
@@ -332,6 +344,7 @@
 				5FF7413821329A2900456787 /* XSIndexDefaultCellHeaderView.swift in Sources */,
 				5F39E0A221284D6900AF74B3 /* XSIndexNavigationView.swift in Sources */,
 				5F9E9FE62146D0D5005FAC97 /* Api.swift in Sources */,
+				5FEAB8B221F742460030E5FB /* XSCardFlowLayout.swift in Sources */,
 				5F18167820F8A50700D631B6 /* XSRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,7 +487,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Smiley.XSSuperDemo-Swfit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -500,7 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Smiley.XSSuperDemo-Swfit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
