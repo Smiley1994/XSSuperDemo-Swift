@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import XSCommon
 
 
 class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -45,7 +46,7 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         view.addSubview(navigationView)
         navigationView.snp.makeConstraints { (make) in
             make.left.top.right.equalTo(view)
-            make.height.equalTo(88)
+            make.height.equalTo(NavgationBarHeight)
         }
         
     }

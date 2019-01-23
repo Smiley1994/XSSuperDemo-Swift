@@ -33,7 +33,7 @@ class XSIndexDefaultCell: UITableViewCell {
     }
     
     class func calculateHeight() -> CGFloat {
-        return 300
+        return 64
     }
     
     required init?(coder aDecoder: NSCoder) {

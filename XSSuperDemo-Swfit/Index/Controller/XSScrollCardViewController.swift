@@ -45,7 +45,7 @@ class XSScrollCardViewController: UIViewController, UICollectionViewDelegate, UI
     
     func createScrollCardView() {
         
-        titleLabel = UILabel(frame: CGRect(x: 0, y: TabBarHeight + TopLiuHeight, width: ScreenWidth, height: 100))
+        titleLabel = UILabel(frame: CGRect(x: 0, y: TabBarHeight, width: ScreenWidth, height: 100))
         titleLabel.textAlignment = .center
         titleLabel.text = "当前是0"
         titleLabel.font = UIFont(name: "Helvetica-Bold", size: 30)
@@ -61,7 +61,7 @@ class XSScrollCardViewController: UIViewController, UICollectionViewDelegate, UI
         layout.sectionInset = UIEdgeInsets(top: padding, left: 0, bottom: padding, right: 0)
         let itemW = (ScreenWidth - padding * 2) / 7
         layout.itemSize = CGSize(width: itemW, height: itemW)
-        collectionView = UICollectionView(frame: CGRect(x: 15, y: TabBarHeight + TopLiuHeight + 100, width: ScreenWidth - 30, height: 100), collectionViewLayout: layout)
+        collectionView = UICollectionView(frame: CGRect(x: 15, y: TabBarHeight + 100, width: ScreenWidth - 30, height: 100), collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.clear
         collectionView.collectionViewLayout = layout
         collectionView.showsHorizontalScrollIndicator = false
@@ -71,7 +71,7 @@ class XSScrollCardViewController: UIViewController, UICollectionViewDelegate, UI
         collectionView.register(XSCardCell.self, forCellWithReuseIdentifier: "item")
         self.view.addSubview(self.collectionView)
         
-        let line = UIView(frame: CGRect(x: 15, y: TabBarHeight + TopLiuHeight + 200, width: ScreenWidth - 30, height: 55))
+        let line = UIView(frame: CGRect(x: 15, y: TabBarHeight + 200, width: ScreenWidth - 30, height: 55))
         line.backgroundColor = UIColor.white
         self.view.addSubview(line)
         let gradientLayer = CAGradientLayer()
