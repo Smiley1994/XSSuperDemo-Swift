@@ -24,6 +24,8 @@
 		5F26165320E3FA28004A52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F26165220E3FA28004A52FC /* Assets.xcassets */; };
 		5F39E0A221284D6900AF74B3 /* XSIndexNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39E0A121284D6900AF74B3 /* XSIndexNavigationView.swift */; };
 		5F39E0A42128526600AF74B3 /* XSDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39E0A32128526600AF74B3 /* XSDefaultCell.swift */; };
+		5F6F73E9221127E40045A3BC /* XSLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F73E8221127E40045A3BC /* XSLeftMenuViewController.swift */; };
+		5F6F73EB221148260045A3BC /* XSChassisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F73EA221148260045A3BC /* XSChassisViewController.swift */; };
 		5F9E9FE02146C763005FAC97 /* XSNoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E9FDF2146C763005FAC97 /* XSNoteDetailViewController.swift */; };
 		5F9E9FE42146D0BB005FAC97 /* XSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E9FE32146D0BB005FAC97 /* XSApi.swift */; };
 		5F9E9FE62146D0D5005FAC97 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E9FE52146D0D5005FAC97 /* Api.swift */; };
@@ -67,6 +69,8 @@
 		5F26165720E3FA28004A52FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F39E0A121284D6900AF74B3 /* XSIndexNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSIndexNavigationView.swift; sourceTree = "<group>"; };
 		5F39E0A32128526600AF74B3 /* XSDefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSDefaultCell.swift; sourceTree = "<group>"; };
+		5F6F73E8221127E40045A3BC /* XSLeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSLeftMenuViewController.swift; sourceTree = "<group>"; };
+		5F6F73EA221148260045A3BC /* XSChassisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSChassisViewController.swift; sourceTree = "<group>"; };
 		5F9E9FDF2146C763005FAC97 /* XSNoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSNoteDetailViewController.swift; sourceTree = "<group>"; };
 		5F9E9FE32146D0BB005FAC97 /* XSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSApi.swift; sourceTree = "<group>"; };
 		5F9E9FE52146D0D5005FAC97 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				5F26164B20E3FA27004A52FC /* AppDelegate.swift */,
 				5F18166720F8905A00D631B6 /* XSSplashViewController.swift */,
 				5F18167720F8A50700D631B6 /* XSRootViewController.swift */,
+				5F6F73EA221148260045A3BC /* XSChassisViewController.swift */,
+				5F6F73E8221127E40045A3BC /* XSLeftMenuViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -330,9 +336,11 @@
 				5FF7413A2132FB3200456787 /* XSIndexDefaultCell.swift in Sources */,
 				5F18167320F89B6100D631B6 /* XSIndexViewController.swift in Sources */,
 				5F18166820F8905A00D631B6 /* XSSplashViewController.swift in Sources */,
+				5F6F73E9221127E40045A3BC /* XSLeftMenuViewController.swift in Sources */,
 				5F9E9FE42146D0BB005FAC97 /* XSApi.swift in Sources */,
 				5FEAB8AF21F73EE70030E5FB /* XSScrollCardViewController.swift in Sources */,
 				5F26164C20E3FA27004A52FC /* AppDelegate.swift in Sources */,
+				5F6F73EB221148260045A3BC /* XSChassisViewController.swift in Sources */,
 				5FEAB8B321F742460030E5FB /* XSCardCell.swift in Sources */,
 				5F21ED4221063AA40034720A /* XSPlayerView.swift in Sources */,
 				5F18167E20F8B54300D631B6 /* XSMacro.swift in Sources */,

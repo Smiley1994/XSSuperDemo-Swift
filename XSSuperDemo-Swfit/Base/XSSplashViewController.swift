@@ -22,7 +22,7 @@ class XSSplashViewController: UIViewController {
 
     
     func openRootViewController() {
-        UIApplication.shared.keyWindow?.rootViewController = XSRootViewController()
+        UIApplication.shared.keyWindow?.rootViewController = XSChassisViewController()
     }
 
 }
