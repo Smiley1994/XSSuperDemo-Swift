@@ -42,13 +42,8 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     func createNavigation() {
-        navigationView = XSIndexNavigationView()
+        navigationView = XSIndexNavigationView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: NavgationBarHeight))
         view.addSubview(navigationView)
-        navigationView.snp.makeConstraints { (make) in
-            make.left.top.right.equalTo(view)
-            make.height.equalTo(NavgationBarHeight)
-        }
-        
     }
     
     
