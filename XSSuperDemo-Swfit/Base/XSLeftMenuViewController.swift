@@ -7,24 +7,38 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class XSLeftMenuViewController: UIViewController {
 
+    var bannerImageView : UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.clear
-        // Do any additional setup after loading the view.
+//        createUI()
+        setupWeather()
     }
     
+    func setupWeather() {
+        
+        let url = "http://www.weather.com.cn/data/sk/101010100.html"
+        Alamofire.request(url).response { response in // method defaults to `.get`
+            print("response === ", JSON(response.data!))
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+    func createUI() {
+        bannerImageView = UIImageView()
+        bannerImageView.image = UIImage(named: "background")
+        self.view.addSubview(bannerImageView)
+        bannerImageView.snp.makeConstraints { (make) in
+            make.left.bottom.right.equalTo(self.view)
+            make.height.equalTo(150)
+        }
+    }
 
 }

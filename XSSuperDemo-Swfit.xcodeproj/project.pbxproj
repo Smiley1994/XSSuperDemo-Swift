@@ -26,6 +26,8 @@
 		5F39E0A42128526600AF74B3 /* XSDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39E0A32128526600AF74B3 /* XSDefaultCell.swift */; };
 		5F6F73E9221127E40045A3BC /* XSLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F73E8221127E40045A3BC /* XSLeftMenuViewController.swift */; };
 		5F6F73EB221148260045A3BC /* XSChassisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F73EA221148260045A3BC /* XSChassisViewController.swift */; };
+		5F6F73F02212E29C0045A3BC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6F73EF2212E29C0045A3BC /* SwiftyJSON.framework */; };
+		5F6F73F12212E2BE0045A3BC /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F6F73EF2212E29C0045A3BC /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5F9E9FE02146C763005FAC97 /* XSNoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E9FDF2146C763005FAC97 /* XSNoteDetailViewController.swift */; };
 		5F9E9FE42146D0BB005FAC97 /* XSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E9FE32146D0BB005FAC97 /* XSApi.swift */; };
 		5F9E9FE62146D0D5005FAC97 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E9FE52146D0D5005FAC97 /* Api.swift */; };
@@ -44,6 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5F6F73F12212E2BE0045A3BC /* SwiftyJSON.framework in CopyFiles */,
 				5F18167C20F8A6C300D631B6 /* SnapKit.framework in CopyFiles */,
 				5F18167B20F8A6BF00D631B6 /* Alamofire.framework in CopyFiles */,
 				5F18167A20F8A6BB00D631B6 /* XSCommon.framework in CopyFiles */,
@@ -71,6 +74,7 @@
 		5F39E0A32128526600AF74B3 /* XSDefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSDefaultCell.swift; sourceTree = "<group>"; };
 		5F6F73E8221127E40045A3BC /* XSLeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSLeftMenuViewController.swift; sourceTree = "<group>"; };
 		5F6F73EA221148260045A3BC /* XSChassisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSChassisViewController.swift; sourceTree = "<group>"; };
+		5F6F73EF2212E29C0045A3BC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		5F9E9FDF2146C763005FAC97 /* XSNoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSNoteDetailViewController.swift; sourceTree = "<group>"; };
 		5F9E9FE32146D0BB005FAC97 /* XSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSApi.swift; sourceTree = "<group>"; };
 		5F9E9FE52146D0D5005FAC97 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6F73F02212E29C0045A3BC /* SwiftyJSON.framework in Frameworks */,
 				5F18166D20F8953E00D631B6 /* XSCommon.framework in Frameworks */,
 				5F18166E20F8953E00D631B6 /* Alamofire.framework in Frameworks */,
 				5F18166F20F8953E00D631B6 /* SnapKit.framework in Frameworks */,
@@ -131,6 +136,7 @@
 		5F18166920F8953E00D631B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F6F73EF2212E29C0045A3BC /* SwiftyJSON.framework */,
 				5F18166B20F8953E00D631B6 /* Alamofire.framework */,
 				5F18166C20F8953E00D631B6 /* SnapKit.framework */,
 				5F18166A20F8953E00D631B6 /* XSCommon.framework */,
@@ -319,6 +325,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/XSCommon.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
