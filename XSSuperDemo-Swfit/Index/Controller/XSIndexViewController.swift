@@ -12,7 +12,7 @@ import XSCommon
 
 
 class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
+    
     var navigationView : XSIndexNavigationView!
     
     var tableView : UITableView!
@@ -34,10 +34,6 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         createNavigation()
         createTableView()
         
-//        Alamofire.request(WeatherUrl).response { response in // method defaults to `.get`
-//            let data = response.data!
-//            print(data)
-//        }
         
     }
     
@@ -58,7 +54,7 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
             make.top.equalTo(navigationView.snp.bottom)
         }
     }
-
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
@@ -85,6 +81,9 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
             let playerViewController = XSPlayerViewController()
             playerViewController.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(playerViewController, animated: true)
+        } else {
+            let s = isJailBroken()
+            print(s)
         }
         
     }
@@ -94,5 +93,18 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         playerViewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(playerViewController, animated: true)
     }
-
+    
+    func isJailBroken() -> Bool {
+        //判断设备上是否安装了这些程序
+        let apps = ["/APPlications/Cydia.app","/APPlications/limera1n.app","/APPlications/greenpois0n.app","/APPlications/blackra1n.app","/APPlications/blacksn0w.app","/APPlications/redsn0w.app","/APPlications/Absinthe.app"]
+        for app in apps {
+            //通过文件管理器，判断在指定的目录下，是否在对应的应用程序。如果存在的话。就表示当前设备为越狱设备。
+            if FileManager.default.fileExists(atPath: app){
+                return true
+            }
+        }
+        return false
+        
+    }
+    
 }
