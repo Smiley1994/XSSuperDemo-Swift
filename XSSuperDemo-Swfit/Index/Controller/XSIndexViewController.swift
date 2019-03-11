@@ -29,7 +29,7 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
-        dataArray = ["ScrollCard", "NoteDetail", "Other", "Other"]
+        dataArray = ["ScrollCard", "NoteDetail", "Other"]
         
         createNavigation()
         createTableView()
@@ -81,9 +81,13 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
             let playerViewController = XSPlayerViewController()
             playerViewController.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(playerViewController, animated: true)
-        } else {
-            let s = isJailBroken()
-            print(s)
+        } else if type == "Other" {
+            let other = XSOtherViewController()
+            other.hidesBottomBarWhenPushed = true
+            other.close = { (backStr : String) -> () in
+                print(backStr)
+            }
+            navigationController?.pushViewController(other, animated: true)
         }
         
     }
@@ -93,6 +97,8 @@ class XSIndexViewController: UIViewController,UITableViewDelegate,UITableViewDat
         playerViewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(playerViewController, animated: true)
     }
+    
+    
     
     func isJailBroken() -> Bool {
         //判断设备上是否安装了这些程序
