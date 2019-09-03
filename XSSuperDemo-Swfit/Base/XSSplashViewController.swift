@@ -10,6 +10,8 @@ import UIKit
 
 class XSSplashViewController: UIViewController {
 
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
@@ -17,7 +19,15 @@ class XSSplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.randomColor
-//        openRootViewController()
+        openRootViewController()
+        
+        
+//        let square = {(param : Int) -> Int in
+//            return param * param
+//        }
+//
+//        print(square(4))
+        
     }
 
     
