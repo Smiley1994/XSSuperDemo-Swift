@@ -17,7 +17,7 @@ class XSSplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.randomColor
-        openRootViewController()
+//        openRootViewController()
     }
 
     
